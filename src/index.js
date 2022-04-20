@@ -159,6 +159,8 @@ class ECharts extends Component {
     return (
       <View style={{ flex: 1 }}>
         <WebView
+          androidHardwareAccelerationDisabled={true}
+          style={{ opacity: 0.99 }}
           ref={this.getWebViewRef}
           originWhitelist={["*"]}
           scrollEnabled={false}
